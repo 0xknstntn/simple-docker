@@ -1,6 +1,7 @@
-version: '3.8'
 services:
-  web-app:
+  web:
     build: .
     ports:
-      - "4567:4567"
+      - "8000:5000"
+  redis:
+    image: "redis:alpine"
